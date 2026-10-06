@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visão geral | Sistema Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">Hospitalar<span>Painel administrativo</span></a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html" aria-current="page">Visão geral</a>
+                <a href="pacientes.html">Pacientes</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="internacoes.html">Internações</a>
+                <a href="quartos.html">Quartos</a>
+                <a href="historico.html">Histórico médico</a>
+            </nav>
+        </aside>
+        <main>
+            <p class="eyebrow">Sistema Hospitalar</p>
+            <h1>Visão geral</h1>
+            <p class="subtitle">Resumo visual dos atendimentos e recursos do hospital.</p>
+
+            <section class="grid" aria-label="Indicadores">
+                <div class="card"><span class="stat-label">Pacientes cadastrados</span><strong class="stat-value">2</strong></div>
+                <div class="card"><span class="stat-label">Profissionais cadastrados</span><strong class="stat-value">2</strong></div>
+                <div class="card"><span class="stat-label">Consultas agendadas</span><strong class="stat-value">1</strong></div>
+                <div class="card"><span class="stat-label">Internações ativas</span><strong class="stat-value">1</strong></div>
+                <div class="card"><span class="stat-label">Quartos disponíveis</span><strong class="stat-value">1</strong></div>
+            </section>
+
+            <section class="card">
+                <div class="section-title"><h2>Próxima consulta</h2><a class="text-link" href="consultas.html">Ver consultas</a></div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Data e hora</th><th>Paciente</th><th>Profissional</th><th>Situação</th></tr></thead>
+                        <tbody><tr><td>06/10/2026, 10:30</td><td>José Santos</td><td>Camila Rocha</td><td><span class="badge blue">Agendada</span></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="section-title"><h2>Ocupação dos quartos</h2><a class="text-link" href="quartos.html">Ver quartos</a></div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Quarto</th><th>Andar</th><th>Ocupação</th><th>Situação</th></tr></thead>
+                        <tbody>
+                            <tr><td>201</td><td>2º</td><td>1 de 1</td><td><span class="badge gray">Ocupado</span></td></tr>
+                            <tr><td>202</td><td>2º</td><td>0 de 2</td><td><span class="badge">Disponível</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

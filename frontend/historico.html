@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Histórico médico | Sistema Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">Hospitalar<span>Painel administrativo</span></a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Visão geral</a>
+                <a href="pacientes.html">Pacientes</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="internacoes.html">Internações</a>
+                <a href="quartos.html">Quartos</a>
+                <a href="historico.html" aria-current="page">Histórico médico</a>
+            </nav>
+        </aside>
+        <main>
+            <p class="eyebrow">Atendimentos</p>
+            <h1>Histórico médico</h1>
+            <p class="subtitle">Consultas, internações e informações registradas de um paciente.</p>
+
+            <section class="card">
+                <h2>Maria Oliveira</h2>
+                <dl class="details">
+                    <div><dt>CPF</dt><dd>000.000.000-00</dd></div>
+                    <div><dt>Data de nascimento</dt><dd>14/03/1985</dd></div>
+                    <div><dt>Telefone</dt><dd>(31) 99999-0001</dd></div>
+                    <div><dt>E-mail</dt><dd>maria@exemplo.com</dd></div>
+                </dl>
+            </section>
+
+            <section class="card">
+                <h2>Consultas</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Data e hora</th><th>Profissional</th><th>Motivo</th><th>Observações médicas</th></tr></thead>
+                        <tbody><tr><td>30/09/2026, 09:00</td><td>Lucas Andrade</td><td>Consulta de rotina</td><td>Acompanhamento clínico registrado.</td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Internações</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Entrada</th><th>Alta prevista</th><th>Alta efetiva</th><th>Quarto</th><th>Profissional</th><th>Observações</th></tr></thead>
+                        <tbody><tr><td>02/10/2026</td><td>08/10/2026</td><td>—</td><td>201</td><td>Lucas Andrade</td><td>Internação em acompanhamento.</td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

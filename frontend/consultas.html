@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consultas | Sistema Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">Hospitalar<span>Painel administrativo</span></a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Visão geral</a>
+                <a href="pacientes.html">Pacientes</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="consultas.html" aria-current="page">Consultas</a>
+                <a href="internacoes.html">Internações</a>
+                <a href="quartos.html">Quartos</a>
+                <a href="historico.html">Histórico médico</a>
+            </nav>
+        </aside>
+        <main>
+            <p class="eyebrow">Atendimentos</p>
+            <h1>Consultas</h1>
+            <p class="subtitle">Agendamentos e registros de consultas médicas.</p>
+
+            <section class="card">
+                <h2>Consultas registradas</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Data e hora</th><th>Paciente</th><th>Profissional</th><th>Motivo</th><th>Situação</th></tr></thead>
+                        <tbody>
+                            <tr><td>30/09/2026, 09:00</td><td>Maria Oliveira</td><td>Lucas Andrade</td><td>Consulta de rotina</td><td><span class="badge gray">Realizada</span></td></tr>
+                            <tr><td>06/10/2026, 10:30</td><td>José Santos</td><td>Camila Rocha</td><td>Avaliação clínica</td><td><span class="badge blue">Agendada</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Agendar consulta</h2>
+                <div class="form-grid">
+                    <div class="field"><label for="paciente">Paciente</label><select id="paciente"><option>Selecione um paciente</option><option>Maria Oliveira</option><option>José Santos</option></select></div>
+                    <div class="field"><label for="profissional">Profissional responsável</label><select id="profissional"><option>Selecione um profissional</option><option>Lucas Andrade</option><option>Camila Rocha</option></select></div>
+                    <div class="field"><label for="data">Data</label><input id="data" type="date"></div>
+                    <div class="field"><label for="horario">Horário</label><input id="horario" type="time"></div>
+                    <div class="field full"><label for="motivo">Motivo da consulta</label><input id="motivo" type="text" placeholder="Descreva o motivo"></div>
+                    <div class="field full"><label for="observacoes">Observações médicas</label><textarea id="observacoes" placeholder="Observações do atendimento"></textarea></div>
+                </div>
+                <button class="button" type="button">Salvar consulta</button>
+                <p class="note">Tela ilustrativa: disponibilidade e conflito de horários serão verificados na implementação da API.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

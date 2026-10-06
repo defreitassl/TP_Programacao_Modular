@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internações | Sistema Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">Hospitalar<span>Painel administrativo</span></a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Visão geral</a>
+                <a href="pacientes.html">Pacientes</a>
+                <a href="profissionais.html">Profissionais</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="internacoes.html" aria-current="page">Internações</a>
+                <a href="quartos.html">Quartos</a>
+                <a href="historico.html">Histórico médico</a>
+            </nav>
+        </aside>
+        <main>
+            <p class="eyebrow">Atendimentos</p>
+            <h1>Internações</h1>
+            <p class="subtitle">Acompanhamento de entradas, previsões de alta e quartos.</p>
+
+            <section class="card">
+                <h2>Internações registradas</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Paciente</th><th>Profissional</th><th>Quarto</th><th>Entrada</th><th>Alta prevista</th><th>Situação</th></tr></thead>
+                        <tbody><tr><td>Maria Oliveira</td><td>Lucas Andrade</td><td>201</td><td>02/10/2026</td><td>08/10/2026</td><td><span class="badge blue">Em andamento</span></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Registrar internação</h2>
+                <div class="form-grid">
+                    <div class="field"><label for="paciente">Paciente</label><select id="paciente"><option>Selecione um paciente</option><option>Maria Oliveira</option><option>José Santos</option></select></div>
+                    <div class="field"><label for="profissional">Profissional responsável</label><select id="profissional"><option>Selecione um profissional</option><option>Lucas Andrade</option><option>Camila Rocha</option></select></div>
+                    <div class="field"><label for="quarto">Quarto</label><select id="quarto"><option>Selecione um quarto</option><option>202 — 2 vagas</option></select></div>
+                    <div class="field"><label for="entrada">Data de entrada</label><input id="entrada" type="date"></div>
+                    <div class="field"><label for="prevista">Data prevista de alta</label><input id="prevista" type="date"></div>
+                    <div class="field"><label for="efetiva">Data efetiva de alta</label><input id="efetiva" type="date"></div>
+                    <div class="field full"><label for="observacoes">Observações</label><textarea id="observacoes" placeholder="Informações relevantes da internação"></textarea></div>
+                </div>
+                <button class="button" type="button">Salvar internação</button>
+                <p class="note">Tela ilustrativa: vagas e capacidade do quarto serão verificadas na implementação da API.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

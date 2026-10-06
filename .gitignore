@@ -1,0 +1,13 @@
+.aws/
+.agents/
+.codex/
+.git-local/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.class
+target/
+build/
+node_modules/
